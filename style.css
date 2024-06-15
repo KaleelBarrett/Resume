@@ -6,80 +6,88 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    margin-top: 80px;
 }
 
-/* Header styling */
+/* Base Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px; /* Ensure header height is defined */
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9); /* Make the header slightly transparent */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for better visual separation */
-}
-
-/* Add a margin to body to prevent content from being hidden under the fixed header */
-body {
-    margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Align h1 to the left */
 header h1 {
-    margin-right: auto;
-    font-size: 1.5rem; /* Ensure consistent font size */
-    color: #333; /* Ensure color for text */
+  margin-right: auto;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 /* Navigation styling */
 header nav {
-    margin-left: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 /* List styling */
 header ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* List item styling */
 header li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Anchor tag styling */
 header a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500; /* Make links stand out */
-    transition: color 0.3s; /* Add smooth transition for color changes */
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 header a:hover {
-    color: #007BFF; /* Add hover color for better UX */
+  color: #007BFF;
 }
 
 /* Button styling */
 .contact-btn {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 20px;
-    transition: background-color 0.3s;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s;
 }
 
 .contact-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+/* Hide the menu toggle button by default */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 /* Container for the home section */
@@ -88,18 +96,18 @@ header a:hover {
     align-items: center;
     justify-content: center; /* Align items to the right */
     padding: 20px; /* Add padding for better spacing */
-    height: 100vh; /* Use full viewport height */
+    height: 85vh; /* Use full viewport height */
     width: 100vw; /* Use full viewport width */
 }
 
 /* Profile Image Styles */
 .profile-img {
-    height: 400px; /* Increase image size */
-    width: 400px; /* Increase image size */
+    height: 500px; /* Increase image size */
+    width: 500px; /* Increase image size */
     border-radius: 50%;
     margin-right: 20px; /* Existing margin */
     object-fit: cover; /* Ensure the image is properly contained */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .text {
@@ -109,13 +117,14 @@ header a:hover {
   
   .text h2 {
     font-size: 24px;
-    margin-bottom: 10px; /* Adjust spacing */
-    font-weight: 100;
+    font-weight: 1;
     font-style: normal;
+    margin-bottom: 0;
   }
   
   .text h1 {
-    font-size: 32px;
+    margin-top: 0;
+    font-size: 48px;
     margin-bottom: 20px; /* Adjust spacing */
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -130,7 +139,7 @@ header a:hover {
   .download-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
     text-decoration: none;
     border: none;
@@ -138,10 +147,11 @@ header a:hover {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 50px;
 }
 
   .download-btn:hover {
-    background-color: #45a049;
+    background-color: black;
   }
 
   .contact-btn {
@@ -155,10 +165,11 @@ header a:hover {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 50px;
   }
 
   .contact-btn:hover {
-    background-color: red;
+    background-color: black;
   }
 
   .social-links {
@@ -168,7 +179,7 @@ header a:hover {
   .social-link {
     display: inline-block;
     margin-right: 10px; /* Adjust spacing between social links */
-    color: #007bff; /* Social link color */
+    color: black; /* Social link color */
   }
   
   .social-link i {
@@ -176,19 +187,20 @@ header a:hover {
   }
   
   .social-link:hover {
-    color: black; /* Darker color on hover */
+    color: #4CAF50; /* Darker color on hover */
   }
 
 
 /* CSS for the About Section*/
   .about {
-    display: flex;
+    margin: 0;
+  display: flex;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   padding: 40px; /* Add padding around the section */
   margin: 20px auto; /* Center section horizontally */
-    height: 70vh; /* Use full viewport height */
-    width: 90vw;
+  height: 120vh; /* Use full viewport height */
+  width: 80vw;
 }
 
 .about-main {
@@ -220,7 +232,7 @@ header a:hover {
   width: 400px; 
   margin: 20px auto; /* Center image horizontally with auto margin */
   display: block; /* Ensures centering */
-  border: 2px solid #0056b3; /* Add border to match theme */
+  border: 2px solid #007BFF; /* Add border to match theme */
 }
 
 /* Styling for the header inside .about section */
@@ -229,10 +241,18 @@ header a:hover {
   padding: 20px; /* Add padding for spacing */
 }
 
-.about-header h1, .about-header h2 {
-  margin: 0; /* Remove default margins for tight spacing */
-  padding: 5px 0; /* Add padding for spacing between elements */
-  color: #0056b3; /* Theme color for headings */
+.about-header h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 1;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.about-header h2 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Container for about details */
@@ -264,16 +284,15 @@ header a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for interactivity */
 }
 
-.experiences img {
-  width: 20px;
-  height: 20px;
+.experiences img,
+.education img {
+  width: 40px;
+  height: 40px;
   text-decoration: none;
+  border: none; /* Add this line */
+  outline: none; /* Add this line */
 }
 
-.education img {
-  width: 20px;
-  height: 20px;
-}
 
 .education:hover, .experiences:hover {
   transform: translateY(-5px); /* Lift effect on hover */
@@ -284,7 +303,6 @@ header a:hover {
   max-width: 800px;
 }
 
-/* CSS for experience section */
 .experience {
   display: flex;
   flex-direction: column;
@@ -298,61 +316,54 @@ header a:hover {
 /* Styling for the section title */
 .experience h1 {
   margin: 0;
-  padding: 10px 0; /* Slightly increased for more space */
-  font-size: 2em; /* Larger font size for prominence */
-  font-weight: bold; /* Bold text */
-  color: #333; /* Darker text for contrast */
 }
 
-/* Main container for the content */
 .cont-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Evenly distribute content */
-  gap: 50px; /* Space between the columns */
-  padding: 20px; /* Padding for spacing around the content */
-  width: 100%;
-  max-width: 1200px; /* Adjust max-width as needed */
-  margin-top: 20px; /* Added margin for spacing */
+  gap: 20px;
+  justify-content: space-between;
 }
 
-/* Shared styles for the content boxes */
 .cont1, .cont2, .cont3 {
-  flex: 1 0 300px; /* Adjusted flex properties */
-  border: 1px solid #ddd; /* Lighter border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-  transition: transform 0.3s; /* Smooth transformation */
-  max-width: 600px; /* Limit width for larger screens */
-  margin-bottom: 20px; /* Added margin bottom for spacing */
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
 }
 
 .cont1 h1, .cont2 h1, .cont3 h1 {
-  text-align: center; /* Center text horizontally */
-  margin: 0 auto; /* Center block-level element */
-  padding: 10px 0; /* Add some vertical spacing */
-  font-size: 1.5em; /* Set a suitable font size */
-  color: #333; /* Ensure consistent text color */
-}
-
-/* Add a hover effect for interactivity */
-.cont1:hover, .cont2:hover, .cont3:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Adjust for spacing */
-.cont2 {
-  margin-top: 20px; /* Adjust for spacing */
+  color: #007BFF;
+  margin-bottom: 20px;
 }
 
 .cont {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  max-width: 600px; /* Adjust this width to manage how many items fit per row */
-  padding: 10px; /* Add padding for spacing */
-  margin: 0 auto; /* Center horizontally */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cont img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.cont h2 {
+  flex: 1;
+}
+
+.cont h3 {
+  color: #888;
+  text-align: right;
+}
+
+.cont1:hover, .cont2:hover, .cont3:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* CSS for Project Section*/
@@ -362,14 +373,15 @@ header a:hover {
   align-items: center; /* Center content horizontally */
   padding: 40px; /* Add padding around the section */
   margin: 20px auto; /* Center section horizontally */
-    height: 50vh; /* Use full viewport height */
-    width: 90vw;
+  height: 75vh; /* Use full viewport height */
+  width: 90vw;
 }
 
 .projects h2 {
   margin: 0;
   color: #333;
-  font-size: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .projects h1 {
@@ -422,64 +434,83 @@ header a:hover {
   font-size: 1.2em;
 }
 
+/* Contact Section Styles */
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  margin: 20px auto;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 50px auto;
 }
 
+.contact h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+/* Contact Container Styles */
 .contact-cont {
   display: flex;
   justify-content: center; /* Center items horizontally */
   gap: 20px; /* Spacing between items */
-  border-radius: 50px; /* Make the container circular */
+  border-radius: 50px; /* Rounded corners */
   overflow: hidden; /* Hide overflow if children are larger */
-  padding: 20px 50px; /* Padding inside the circular container */
-  background-color: #45a049;
+  padding: 10px 20px; /* Padding inside the container */
+  background-color: #45a049; /* Green background */
 }
 
-.social-link {
-  position: relative; /* Position for label */
+/* Individual Contact Link Styles */
+.contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* Remove underline */
-  color: black; /* Assuming default color */
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
 }
 
-.social-link:hover .label {
-  opacity: 1; /* Show label on hover */
+
+.contact-link img {
+  width: 40px;
+  height: 40px;
+  fill: currentColor; /* Ensures SVGs inherit the text color */
 }
 
-.label {
-  position: absolute;
-  bottom: -20px; /* Adjust positioning of label */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%);
-  opacity: 0; /* Initially hide label */
-  background-color: black; /* Label background color */
-  color: black; /* Label text color */
-  padding: 5px 10px; /* Padding for label */
-  border-radius: 5px; /* Rounded corners for label */
+.contact-link span.label {
+  display: none; /* Hiding label for visual-only styling */
 }
 
-.social-link img {
-  width: 100%; /* Ensure the image fills the container */
-  height: auto; /* Maintain aspect ratio */
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
 }
 
-.social-link i {
-  font-size: 24px; /* Adjust icon size as needed */
+.footer p {
+  margin: 5px 0;
 }
 
-/* Additional styling for LinkedIn icon */
-.social-link[data-label="LinkedIn"] i {
-  color: #0077b5; /* LinkedIn blue color */
+.footer a {
+  color: #45a049;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+.footer a:hover {
+  color: #5cd65c;
+}
 

@@ -10,21 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
   <header>
     <h1>Kaleel Barrett</h1>
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Experience</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Skills</a></li>
       </ul>
+      <button class="contact-btn">Contact</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </nav>
-    <button class="contact-btn">Contact</button>
   </header>
+  
 
   <section class="home">
     <img src="pic-removebg-preview.png" alt="Picture of Kaleel Barrett" class="profile-img">
@@ -48,36 +51,34 @@
       <h2>About me</h2>
     </div>
   
-    <div class="about-main">
+    <div class="about">
       <img src="pic-removebg-preview.png" alt="Picture of me" class="about-image">
       
-      <div class="about-ever">
-        <div class="about-details">
-          <article class="education">
-            <img src="education.svg" alt="">
-            <h3>Education</h3>
-            <p> Bsc. in Computing </p>
-          </article>
+      <div class="about-details">
+        <article class="education">
+          <img src="education.svg" alt="">
+          <h3>Education</h3>
+          <p>Bsc. in Computing</p>
+        </article>
     
-          <article class="experiences">
-            <img src="medal-.svg" alt="">
-            <h3>Experiences</h3>
-            <p>2+ Years <br>
-              Web and Graphic Designer</p>
-          </article>
-        </div>
-    
-        <article class="about-description">
-          <p>Passionate about crafting visually compelling and user-friendly digital experiences, 
-             I am a versatile graphic and web designer with over 2 years of industry experience. 
-             My journey in design began with a fascination for art and technology, and it has evolved into
-             a fulfilling career where creativity meets functionality. I thrive on turning complex ideas into 
-             engaging and accessible designs, ensuring each project not only looks stunning but also delivers
-             a seamless user experience.
-          </p>
+        <article class="experiences">
+          <img src="medal-.svg" alt="">
+          <h3>Experiences</h3>
+          <p>2+ Years<br>Web and Graphic Designer</p>
         </article>
       </div>
-      </div>
+    
+      <article class="about-description">
+        <p>Passionate about crafting visually compelling and user-friendly digital experiences, 
+          I am a versatile graphic and web designer with over 2 years of industry experience. 
+          My journey in design began with a fascination for art and technology, and it has evolved into
+          a fulfilling career where creativity meets functionality. I thrive on turning complex ideas into 
+          engaging and accessible designs, ensuring each project not only looks stunning but also delivers
+          a seamless user experience.
+        </p>
+      </article>
+    </div>
+    
   </section>
   
   <section class="experience">
@@ -88,19 +89,19 @@
 
         <h1>FontEnd Devlopment</h1>
         <div class="cont">
-          <img src="" alt="">
+          <img src="html.png" alt="">
           <h2>Html</h2>
           <h3>Experienced</h3>
         </div>
         
         <div class="cont">
-          <img src="" alt="">
+          <img src="css-3.png" alt="">
           <h2>Css</h2>
           <h3>Experienced</h3>
         </div>
 
         <div class="cont">
-          <img src="" alt="">
+          <img src="bootstrap.png" alt="">
           <h2>Boot Stramp</h2>
           <h3>Experienced</h3>
         </div>
@@ -110,43 +111,42 @@
 
         <h1>BackEnd Devlopment</h1>
         <div class="cont">
-          <img src="" alt="">
+          <img src="java-script.png" alt="">
           <h2>Javascript</h2>
           <h3>Experienced</h3>
         </div>
         
         <div class="cont">
-          <img src="" alt="">
-          <h2>Css</h2>
-          <h3>SQL</h3>
+          <img src="sql-server.png" alt="">
+          <h2>SQL</h2>
+          <h3>Experienced</h3>
         </div>
 
         <div class="cont">
-          <img src="" alt="">
+          <img src="flutter.png" alt="">
           <h2>Flutter</h2>
           <h3>Experienced</h3>
         </div>
 
       </div>
-
       <div class="cont3">
 
         <h1>Adobe Apps</h1>
         <div class="cont">
-          <img src="" alt="">
-          <h2>Javascript</h2>
+          <img src="after-effects.png" alt="">
+          <h2>Adobe After Effects</h2>
           <h3>Experienced</h3>
         </div>
         
         <div class="cont">
-          <img src="" alt="">
-          <h2>Css</h2>
-          <h3>SQL</h3>
+          <img src="photoshop.png" alt="">
+          <h2>Adbbe Photoshop</h2>
+          <h3>Experienced</h3>
         </div>
 
         <div class="cont">
-          <img src="" alt="">
-          <h2>Flutter</h2>
+          <img src="illustrator.png" alt="">
+          <h2>Adobe Illustrator</h2>
           <h3>Experienced</h3>
         </div>
 
@@ -161,7 +161,7 @@
     <div class="proj-cont">
   
       <div class="proj1">
-        <img src="" alt="">
+        <img src="project.pic" alt="">
         <div class="button-container">
           <button><a href="#GitHub"><i class="fab fa-github"></i></a></button>
           <button><a href="">Visit Site</a></button>
@@ -169,7 +169,7 @@
       </div>
   
       <div class="proj2">
-        <img src="" alt="">
+        <img src="project.pic" alt="">
         <div class="button-container">
           <button><a href="#GitHub"><i class="fab fa-github"></i></a></button> 
           <button><a href="">Visit Site</a></button>
@@ -177,7 +177,7 @@
       </div>
   
       <div class="proj3">
-        <img src="" alt="">
+        <img src="project.pic" alt="">
         <div class="button-container">
           <button><a href="#GitHub"><i class="fab fa-github"></i></a></button>
           <button><a href="">Visit Site</a></button>
@@ -191,10 +191,26 @@
     <h2>Get in touch</h2>
     <h1>Contact Me</h1>
     <div class="contact-cont">
-      <a href="mailto:youremail@example.com" data-label="Mail" aria-label="Mail" class="social-link"><img src="email.svg" alt=""><span class="label"></span></a>
-      <a href="https://www.linkedin.com/" data-label="LinkedIn" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i><span class="label"></span></a>
+      <a href="mailto:youremail@example.com" data-label="Mail" aria-label="Mail" class="contact-link"><img src="email.svg" alt=""><span class="label"></span></a>
+      <a href="https://www.linkedin.com/" data-label="LinkedIn" aria-label="LinkedIn" class="contact-link"><img src="linkedin.png" alt=""><span class="label"></span></a>
     </div>
   </section>
   
+  <footer class="footer">
+    <p>&copy; 2024 Kaleel Barrett. All Rights Reserved.</p>
+    <p>Designed by <a href="https://www.=cosmiccreation.com" target="_blank" rel="noopener noreferrer">Cosmic Craetion</a></p>
+  </footer>
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.menu');
+      
+      menuToggle.addEventListener('click', function() {
+          menu.classList.toggle('menu-active');
+      });
+  });
+  </script>
+  
 </html>
