@@ -74,6 +74,7 @@ header a:hover {
   cursor: pointer;
   margin-left: 20px;
   transition: background-color 0.3s;
+  
 }
 
 .contact-btn:hover {
@@ -91,14 +92,15 @@ header a:hover {
 }
 
 /* Container for the home section */
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Align items to the right */
-    padding: 20px; /* Add padding for better spacing */
-    height: 85vh; /* Use full viewport height */
-    width: 100vw; /* Use full viewport width */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 85vh;
+  width: 100vw;
 }
+
 
 /* Profile Image Styles */
 .profile-img {
@@ -120,6 +122,7 @@ header a:hover {
     font-weight: 1;
     font-style: normal;
     margin-bottom: 0;
+    color: #666;
   }
   
   .text h1 {
@@ -129,6 +132,7 @@ header a:hover {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #007BFF;
   }
   
   .button-group {
@@ -169,7 +173,7 @@ header a:hover {
   }
 
   .contact-btn:hover {
-    background-color: black;
+    background-color: grey;
   }
 
   .social-links {
@@ -191,15 +195,15 @@ header a:hover {
   }
 
 
-/* CSS for the About Section*/
-  .about {
-    margin: 0;
+/* CSS for the About Section */
+#about {
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  padding: 40px; /* Add padding around the section */
-  margin: 20px auto; /* Center section horizontally */
-  height: 120vh; /* Use full viewport height */
+  align-items: center;
+  padding: 40px;
+  margin: 20px auto;
+  height: 80vh;
   width: 80vw;
 }
 
@@ -216,14 +220,6 @@ header a:hover {
   width: auto;
   height: 400px;
   margin-left: 100px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  padding: 40px; /* Add padding around the section */
-  margin: 20px auto; /* Center section horizontally */
 }
 
 /* Styling for image inside .about section */
@@ -247,12 +243,14 @@ header a:hover {
   font-weight: 1;
   font-style: normal;
   text-transform: uppercase;
+  color: #666;
 }
 
 .about-header h2 {
   font-size: 48px;
   margin-top: 0;
   margin-bottom: 0;
+  color: #007BFF;
 }
 
 /* Container for about details */
@@ -303,14 +301,15 @@ header a:hover {
   max-width: 800px;
 }
 
-.experience {
+/* CSS for the Experience Section */
+#experience {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  padding: 40px; /* Add padding around the section */
-  margin: 20px auto; /* Center section horizontally */
-    height: 70vh; /* Use full viewport height */
-    width: 90vw;
+  align-items: center;
+  padding: 40px;
+  margin: 20px auto;
+  height: 70vh;
+  width: 90vw;
 }
 
 /* Styling for the section title */
@@ -366,29 +365,29 @@ header a:hover {
   transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* CSS for Project Section*/
-.projects {
+/* CSS for Project Section */
+#projects {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  padding: 40px; /* Add padding around the section */
-  margin: 20px auto; /* Center section horizontally */
-  height: 75vh; /* Use full viewport height */
+  align-items: center;
+  padding: 40px;
+  margin: 20px auto;
+  height: 90vh;
   width: 90vw;
 }
 
-.projects h2 {
+#projects h2 {
   margin: 0;
-  color: #333;
+  color: #666;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
 
-.projects h1 {
+#projects h1 {
   margin-top: 10px;
   font-size: 2.5em;
   font-weight: bold;
-  color: #333;
+  color: #007BFF;
 }
 
 .proj-cont {
@@ -403,7 +402,7 @@ header a:hover {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  width: 300px;
+  width: 500px;
 }
 
 .proj1 img, .proj2 img, .proj3 img {
@@ -435,7 +434,7 @@ header a:hover {
 }
 
 /* Contact Section Styles */
-.contact {
+#contact {
   padding: 40px 20px;
   text-align: center;
   border-radius: 8px;
@@ -443,15 +442,15 @@ header a:hover {
   margin: 50px auto;
 }
 
-.contact h2 {
+#contact h2 {
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 10px;
   text-transform: uppercase;
+  margin-bottom: 10px;
   margin-bottom: 0px;
 }
 
-.contact h1 {
+#contact h1 {
   font-size: 2rem;
   color: #007BFF;
   margin-bottom: 30px;
@@ -464,7 +463,7 @@ header a:hover {
   display: flex;
   justify-content: center; /* Center items horizontally */
   gap: 20px; /* Spacing between items */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   overflow: hidden; /* Hide overflow if children are larger */
   padding: 10px 20px; /* Padding inside the container */
   background-color: #45a049; /* Green background */
@@ -473,26 +472,48 @@ header a:hover {
 /* Individual Contact Link Styles */
 .contact-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 60px;
   height: 60px;
   text-decoration: none;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+.contact-link:hover {
+  background-color: #e9e9e9; /* Slightly darker on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
 
 .contact-link img {
-  width: 40px;
-  height: 40px;
-  fill: currentColor; /* Ensures SVGs inherit the text color */
+  width: 30px; /* Smaller icon size */
+  height: 30px;
+}
+
+.contact-link i {
+  font-size: 30px; /* Consistent icon size */
+  color: #000; /* Icon color */
+  width: 30px; /* Consistent width */
+  height: 30px; /* Consistent height */
 }
 
 .contact-link span.label {
   display: none; /* Hiding label for visual-only styling */
+  color: #000; /* Text color for hidden label */
 }
 
+.contact-link:focus span.label,
+.contact-link:hover span.label {
+  display: block; /* Show label on focus or hover */
+}
+
+
 /* Footer Styles */
-.footer {
+#footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
@@ -500,17 +521,16 @@ header a:hover {
   width: 100%;
 }
 
-.footer p {
+#footer p {
   margin: 5px 0;
 }
 
-.footer a {
+#footer a {
   color: #45a049;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
+#footer a:hover {
   color: #5cd65c;
 }
-

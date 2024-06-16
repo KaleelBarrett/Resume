@@ -51,7 +51,7 @@
 
 /* Home Section */
 @media (max-width: 600px) {
-    .home {
+    #home {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -93,7 +93,7 @@
 
 /* About Section */
 @media (max-width: 600px) {
-    .about {
+    #about {
         padding: 20px;
         height: 260vh; /* Use full viewport height */
         width: 70%;
@@ -155,7 +155,7 @@
 
 /* Experience Section */
 @media (max-width: 600px) {
-    .experience {
+    #experience {
         padding: 20px;
         width: 100%;
         height: auto;
@@ -203,17 +203,17 @@
 
 /* Projects Section */
 @media (max-width: 600px) {
-    .projects {
+    #projects {
         padding: 20px;
         width: 80%;
         height: auto;
     }
 
-    .projects h1 {
+    #projects h1 {
         font-size: 24px;
     }
 
-    .projects h2 {
+    #projects h2 {
         font-size: 16px;
     }
 
@@ -245,32 +245,32 @@
 
 /* Contact Section */
 @media (max-width: 600px) {
-    .contact {
+    #contact {
         padding: 20px;
         width: 80%;
     }
 
-    .contact h1 {
+    #contact h1 {
         font-size: 24px;
     }
 
-    .contact h2 {
+    #contact h2 {
         font-size: 16px;
     }
 
-    .contact-cont {
+    #contact-cont {
         flex-direction: column;
         padding: 10px;
         gap: 10px;
     }
 
-    .contact-link {
+    #contact-link {
         width: 50px;
         height: 50px;
         margin: 0 auto;
     }
 
-    .contact-link img {
+    #contact-link img {
         width: 30px;
         height: 30px;
     }
@@ -278,7 +278,7 @@
 
 /* Footer Section */
 @media (max-width: 600px) {
-    .footer {
+    #footer {
         padding: 10px;
         font-size: 0.6rem;
     }
